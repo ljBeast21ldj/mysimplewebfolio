@@ -1,10 +1,12 @@
 {
-  "homepage": "http://ljBeast21ldj.github.io/simplefolio",
+  "homepage": "http://ljBeast21ldj.github.io/mysimplewebfolio",
   "name": "simplefolio",
   "version": "1.0.1",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
